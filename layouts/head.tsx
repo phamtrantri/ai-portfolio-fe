@@ -7,6 +7,7 @@ export const Head = () => {
   return (
     <NextHead>
       <title>{siteConfig.name}</title>
+      <link href="/avatar.svg" rel="icon" />
       <meta key="title" content={siteConfig.name} property="og:title" />
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />
@@ -15,7 +16,12 @@ export const Head = () => {
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport"
       />
-      <link href="/favicon.ico" rel="icon" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/avatar.svg" />
+      <meta property="og:image:type" content="image/svg" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="300" />
+      <meta property="og:image:alt" content="AI Assistant" />
     </NextHead>
   );
 };

@@ -155,7 +155,6 @@ export default function IndexPage() {
             })}
           >
             <Typewriter
-              cursor
               deleteSpeed={50}
               loop={false}
               typeSpeed={50}
@@ -177,7 +176,7 @@ export default function IndexPage() {
       <section className="flex flex-col items-center justify-center mt-4 flex-1 relative">
         <div
           ref={chatboxRef}
-          className="w-full sm:w-2/3 flex flex-col border-1 border-default-400 rounded-lg p-2 pb-36 overflow-y-scroll"
+          className="w-full sm:w-2/3 flex flex-1 flex-col border-1 border-default-400 rounded-lg p-2 pb-36 overflow-y-scroll"
           style={{ height: divHeight }}
         >
           {chatbox.map((message, index) => {

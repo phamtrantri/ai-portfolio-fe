@@ -13,7 +13,7 @@ interface ChatMessage {
 type ChatBox = ChatMessage[];
 
 export default function IndexPage() {
-  const [divHeight, setDivHeight] = useState("calc(100vh - 200px)");
+  const [divHeight, setDivHeight] = useState("calc(100svh - 200px)");
   const textSectionRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const chatboxRef = useRef<HTMLDivElement>(null);
